@@ -1,0 +1,1643 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body, .container-fluid, .row {
+ height: 100%;
+ }
+
+.brandname {
+	font-size: 28px;
+	font-family: 'monotype corsiva';
+	width: 150px;
+	float: left;
+	margin: 8px 35px;
+}
+
+.brandname a{}
+
+.headsection {
+	position: fixed;
+	width: 100%;
+	border: 1px solid;
+	border-color: #e7e7e7;
+	background-color: #f8f8f8;
+	z-index: 1;
+	max-height: 54px;
+	top:0;
+	left: 0;
+}
+
+
+.headleft{
+	
+}
+.headright{
+	
+}
+
+.user-name {
+	float: left;
+}
+.user-name img {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #337AB7;
+	border-radius: 25px;
+}
+
+.user-name h4 {
+	font-size: 16px;
+	font-family: 'sans-serif';
+	margin: 10px 5px;
+	float: left;
+}
+
+.sidebar {
+	margin: 60px 0 0 10px;
+	background: #ebebeb;
+	box-shadow: 0px 0px 4px 0px #b8b8b8;
+	border-radius: 3px;
+	padding: 20px;
+	float: left;
+	width: 100%;
+	min-height: 100vh;
+}
+.sidebar ul {}
+.sidebar ul li {
+	background: #CFCFCF;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #9D9D8B;
+}
+.sidebar ul li:first-child{
+	border-radius: 5px 5px 0 0;
+}
+.sidebar ul li:hover {
+	border-bottom: 1px solid #9D9D8B;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 60px;
+	left: 0;
+	background-color: #EBEBEB;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	text-align: center;
+	box-shadow: 0px 0px 4px 0px #b8b8b8;
+	border-radius: 3px;
+}
+.sidenav a {
+	padding: 6px 5px 9px 10px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	background: #D1D1D1;
+	margin: 7px;
+	text-align: center;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.success {
+	background: #A9EB59;
+	padding: 5px 20px;
+	margin-right: 20px;
+	border: 2px solid #4B933D;
+	color: #4B933D;
+	text-align: center;
+	overflow: hidden;
+}
+.success h4{
+	font-size: 20px;
+	font-family: 'sans-serif';
+	margin:0;
+}
+.error{}
+.content {
+	padding: 15px 0px;
+	background: #ebebeb;
+	box-shadow: 0px 0px 4px 0px #b8b8b8;
+	border-radius: 3px;
+	margin: 60px 0px 10px 0px;
+	min-height: 100vh;
+}
+.content-post {
+	width: 100%;
+	overflow: initial;
+}
+.footsection {
+	width: 100%;
+	background: #F8F8F8;
+	color: #6E6E6E6E;
+	text-align: center;
+	border: 1px solid #E9E9E9;
+	height: 10%;
+	overflow: hidden;
+}
+
+.footsection p {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.bg-img{
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+}
+.bg-img2{
+	background: url(../img/bg_2.jpg) no-repeat center center fixed;
+}
+
+
+.bg-img, .bg-img2{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+	background-size: cover;
+	-webkit-filter: blur(3px); 
+	z-index: 70;
+}
+
+.signup-form {
+	width: 35%;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.6);
+	padding: 15px 22px;
+	border: 1px solid;
+	border-bottom-color: rgba(255,255,156,.7);
+	border-right-color: rgba(60,60,60,.35);
+	border-top-color: rgba(60,60,60,0.6);
+	border-left-color: rgba(80,80,80,.4);
+	text-shadow: 2px 2px 1px #494949;
+	font-size: 18px;
+	border-radius: 10px;
+	z-index: 80;
+	position: fixed;
+	top: 15%;
+	left: 32.5%;
+	margin-bottom: 20px;
+	color: #FFFF9C;
+}
+.login-form{
+	color: #fff;
+}
+.login-user-icon {
+	font-size: 14px;
+	color: #0A2747;
+	background: rgba(0,0,0,0.3);
+	border-radius: 50px;
+	width: 85px;
+	text-align: center;
+	margin: 2px auto;
+	height: 63px;
+	padding: 10px 0;
+	text-shadow: 0px -2px 3px #9EF3F3;
+}
+
+.signup-user-icon {
+	font-size: 10px;
+	border: 1px solid;
+	border-color: rgba(255,255,156,.7);
+	background-color: rgba(31,37,36,0.2);
+	border-radius: 50px;
+	width: 67px;
+	text-align: center;
+	margin: 2px auto;
+	height: 47px;
+	padding: 10px 0;
+	text-shadow: 0px 3px 4px #000;
+	color: #FFFF9C;
+}
+.pw-btn {
+	float: left;
+	margin: 1px -40px;
+	position: relative;
+	border-left: 1px solid;
+	height: 34px;
+}
+.input-item {
+	height: 70px;
+	clear: both;
+	overflow: hidden;
+}
+.input-item label{
+	color: #FFFF9C;
+}
+.login-form label{}
+.signup-form h2 {
+	border: 1px solid;
+	border-bottom-color: rgba(255,255,156,.7);
+	border-right-color: rgba(60,60,60,.35);
+	border-top-color: rgba(60,60,60,0.6);
+	border-left-color: rgba(80,80,80,.4);
+	background-color: rgba(31,37,36,0.2);
+	padding: 5px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 24px;
+	width: 90%;
+	margin: 11px auto;
+	color: #FFFF9C;
+}
+
+
+.login-form h2 {
+	color: #EFE6FC;
+	border-bottom-color: rgba(255,255,255,.5);
+	background-color: rgba(0,0,0,.2);
+	padding: 5px;
+	border-radius: 50px;
+	text-align: center;
+	margin: 10px 10px 15px;
+	font-size: 24px;
+}
+.signup-form label{
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.diff-item {
+	margin: 10px 0 0px;
+}
+.diff-item label{
+	display: inline;
+	padding-right: 15px;
+}
+#diff-label {
+	margin-bottom: 5px;
+}
+.diff-item input{
+	margin: 5px 0 0px;
+}
+.signup-form input, .signup-form button {
+	width: 90%;
+	border: 1px solid;
+	border-bottom-color: rgba(255,255,156,.7);
+	border-right-color: rgba(60,60,60,.35);
+	border-top-color: rgba(60,60,60,0.6);
+	border-left-color: rgba(80,80,80,.4);
+	background-color: rgba(31,37,36,0.2);
+	background-repeat: no-repeat;
+	padding: 7px 24px 7px 20px;
+	font: bold .875em/1.25em "Open Sans Condensed", sans-serif;
+	letter-spacing: .075em;
+	
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	margin-bottom: 10px;
+	border-radius: 30px;
+}
+.signup-form input{color: #fff;}
+
+.login-form input, .login-form button {
+	border-bottom-color: rgba(255,255,255,.5);
+	background-color: rgba(0,0,0,.2);
+}
+.signup-form input[type="radio"] {
+	display: inline;
+	width: 5%;
+}
+.signup-form button {
+	width: 50%;
+	margin: 10px 27% 15px;
+	color: #ffff;
+}
+.signup-form button:hover {
+	 background-color: rgba(0,0,0,.5);
+}
+
+.signup-form select {
+	background-color: rgba(31,37,36,0.2);
+	color: #ffff;
+	border: 1px solid #9E9E3B;
+	padding: 2px 10px;
+	margin-right: 15px;
+	font-size: 18px;
+	margin-top: 5px;
+}
+.signup-form p {
+	color: #EFE6FC;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+.signup-form a {
+	color: #C8C8C8;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.signup-form select option {
+	background-color: #212C1C;
+}
+#pw-eye, #pw-eye2 {
+	color: #dcdcdcdc;
+	margin: 7px;
+	font-size: 16px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+	display: none;
+	color: #fff;
+	z-index: 1000;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.8);
+	padding: 10px;
+	border-radius: 5px;
+	top:320px; position:absolute; right: 80px
+}
+
+#message p {
+	padding: 0px 41px;
+	font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.errors {
+	color: #A60909;
+	font-size:16px;
+	text-shadow: none;
+	margin-left:10px;
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+.userprofile {
+	margin: 60px 0;
+}
+.profileimage, .profilecontent {
+	height: 100%;
+	background: #E8E8E8;
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+.profileimage h3,.profilecontent h3 {
+	margin: 5px auto;
+	font-size: 18px;
+	background: #DEDEDE;
+	padding: 5px 10px;
+	text-align: center;
+	border-bottom: 2px solid;
+	border-radius: 5px;
+	box-shadow: 0 0px 11px -4px;
+	
+	color: #166969;
+}
+.profileimage h3{
+	width: 90%;
+}
+.profileimage img {
+	width: 210px;
+	height: 220px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px 1px #0B7E90;
+	padding: 2px;
+	background: #6db3f2;
+	background: -moz-linear-gradient(45deg, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+	background: -webkit-linear-gradient(45deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+	background: linear-gradient(45deg, #010e19 0%,#287466 50%,#0f1e20 51%,#187d7c 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 );
+	margin: 20px 36px 10px;
+}
+.profileimage form {
+	margin: 0 auto;
+	width: 75%;
+}
+.butn {
+	padding: 6px 10px;
+	background: #2D74B1;
+	display: inline-block;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 25px;
+}
+.butn input[type="file"], .butn input[type="submit"] {
+    display: none;
+}
+.profileimage input[type="text"],.profileimage input[type="email"] {
+	width: 245px;
+	margin-top: 20px;
+	margin-left: -25px;
+	font-size: 18px;
+	background: #DEDEDE;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0px 11px -4px;
+	color: #166969;
+	border-bottom: 2px solid #166969;
+	display: block;
+}
+.profileimage select{
+}
+.profileimage {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.profilecontent {
+	width: 100%;
+	float: left;
+	padding: 30px 60px;
+	margin-bottom: 15px;
+	min-height: 100vh;
+}
+.profilecontent table {
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: 'Arial';
+	color: #166969;
+}
+.profilecontent tr {
+	
+}
+.profilecontent td {
+	padding: 5px;
+}
+.profilecontent h3 {
+	width: 100%;
+}
+.userlisttable {
+	margin: 0 20px;
+}
+tbody{
+	padding: 50px 20px;
+}
+
+.createmess {
+	width: 50%;
+	font-size: 16px;
+	color: #539AD7;
+	margin: 70px auto;
+}
+.createmess h2 {
+	font-size: 32px;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background: #E6E6E6;
+	border-radius: 25px 25px 0 0;
+	box-shadow: 0px -2px 3px 1px;
+}
+.createmess h3 {
+	font-size: 20px;
+	margin: 5px 0 0px 0;
+	text-align: center;
+}
+.createmess button {
+	font-size: 32px;
+	padding: 10px;
+	text-align: center;
+	background: #E6E6E6;
+	border-radius: 0 0 25px 25px;
+	box-shadow: 0px 0px 3px 1px;
+	width: 100%;
+	border: none;
+}
+.createmess button:hover {
+	background: #0079F8;
+	color: #fff;
+	transition: 1s;
+}
+.createmess p{
+	float: left;
+	width: 5%;
+}
+.createmess input[type=text]{
+	width: 95%;
+	float: right;
+}
+.createmess input[type="checkbox"] {
+	margin: -3px 10px 0px 0;
+	padding: 0;
+}
+.createmess select{
+	width: 95%;
+}
+.createmess input, .createmess select {
+	margin-bottom: 15px;
+	height: 30px;
+	border: 1px solid #B5CEE4;
+	box-shadow: 0 0 2px 0px;
+	padding-left: 10px;
+	float: left;
+}
+
+.chkitem {
+	width: 100%;
+	margin: 5px 0 0 20px;
+	float: left;
+}
+
+.chkitem-name{
+	width: 60%;
+	float: left;
+}
+.createmess-item{
+	overflow: hidden;
+	padding: 20px 15px 20px 5px;
+	box-shadow: 0px 0px 3px 1px;
+}
+.userlist{
+	width: 100%;
+}
+
+.createmess input::placeholder{
+}
+.usersinfo {
+	width: 100%;
+	float: left;
+	background: #fff;
+	margin: 5px 0px;
+	padding: 10px 0px 5px 20px;
+	border-radius: 10px;
+	border: 1px solid #C3C3C3;
+	box-shadow: 0px 2px 5px 2px #D4D4D4;
+}
+.membersinfo {
+	width: 31.33%;
+	float: left;
+	background: #fff;
+	margin: 5px 7px;
+	padding: 10px 0px 5px 20px;
+	border-radius: 10px;
+	border: 1px solid #C3C3C3;
+	box-shadow: 0px 2px 1px 2px #fff;
+}
+
+.mess-profile{
+	width: 100%;
+}
+
+.mess-profile a {
+	text-decoration: none;
+}
+
+.mess-header{
+	text-align: center;
+	font-family: 'Coda Caption', sans-serif;
+	background: #337AB7;
+	padding: 5px 0;
+	margin: 5px;
+	border-radius: 5px;
+}
+.mess-profile h2 {
+	text-align: center;
+	font-family: 'Coda Caption', sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.mess-profile h2:hover {
+	color: #2B557A;
+	cursor: pointer;
+	transition: 1s;
+}
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	min-width: 320px;
+	padding: 0;
+	margin: -28px 37.5% 10px;
+	font-size: 14px;
+	text-align: center;
+	list-style: none;
+	background-color: rgba(51,122, 183,.6);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 0px solid rgba(0, 0, 0, .15);
+	border-radius: 0 0 5px 5px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+}
+
+
+.dropdown-menu > li {
+	display: block;
+	padding: 0;
+	font-weight: normal;
+	line-height: -0.571;
+	
+	background: rgba(51,122, 188,.9);
+	margin: 10px 0px;
+	font-weight: bold;
+	font-family: "Serif";
+	width: 100%;
+	font-size: 19px;
+}
+
+.dropdown-menu > li:hover {
+	background: #F5F5F5;
+}
+ .dropdown-menu > li > a{
+ 	color: #fff;
+ }
+
+.dropdown-menu > li{
+	margin-bottom: 0;
+}
+.dropdown-menu > li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+
+.mess-Menu-btn {
+	width: 20%;
+	margin: 0 auto;
+	background: #337AB7;
+	text-align: center;
+	margin-top: -5px;
+	border-radius: 0px 0px 30px 30px;
+	padding: 4px 0;
+	overflow: hidden;
+}
+.mess-Menu-btn:hover {
+	background: #1B619E;
+}
+.mess-Menu-btn i{
+	color: #fff;
+}
+.mess-Menu-btn i:after{
+	display: none;
+}
+
+.userslistimage {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 52%;
+}
+.userslistimage img {
+	width: 120px;
+	border-radius: 82px;
+	border: 1px solid #999;
+	box-shadow: 0px 2px 4px -1px;
+	height: 120px;
+}
+.usersinfo p,.membersinfo p {
+	text-align: justify;
+	margin: 10px 0;
+	border-bottom: 1px dashed;
+	width: 93%;
+	color: #066079;
+	font-size: 14px;
+}
+.memberslist input[type="submit"] {
+	float: left;
+	width: 39%;
+	margin: 15px 10px 0;
+}
+
+.mealcatagories {
+	background: #337AB7;
+	border-radius: 5px;
+	margin-right: 20px;
+	padding: 5px;
+	color: #FFF;
+	font-family: 'monotype corsiva';
+}
+.mealcatagories h2 {
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 1px 3px 2px #2C2C2C;
+}
+.mealoptions {
+	width: 100%;
+	float: left;
+	font-size: 115px;
+	background: #fff;
+	margin: 20px 0px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.mealoptions a {
+    color: #337AB7;
+}
+.mealoptions a:hover {
+	color: #0F5693;
+}
+.mealoptions i {
+	color: #337AB7;
+}
+
+.togglediv{
+	overflow: hidden;
+
+}
+.togglediv{
+	width: 50%;
+	padding: 20px;
+	text-align: justify;
+	background-color: #1E65A2;
+	font-size: 14px;
+	border-radius: 5px;
+	color: #ddd;
+	margin: 58px auto;
+}
+.togglediv h2 {
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 15px 0;
+	padding: 5px;
+	background: #3980BD;
+	border-bottom: 1px solid #215070;
+	border-radius: 3px;
+	clear: both;
+}
+.meal-date{
+	width: 50%;
+	margin: 0 auto;
+}
+.mealList {
+	margin-bottom: 20px;
+}
+.mealList p{
+	float: left;
+	padding-right: 20px;
+}
+
+.mealList table{
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+.mealList table th {
+
+}
+.mealList table td{
+	
+}
+.mealList input, .mealList select {
+	background: #135491;
+	border: 1px solid #2C73B0;
+	padding: 0px 5px;
+	width: 27%;
+	height: 30px;
+	margin-bottom: 5px;
+	float: left;
+}
+.mealList input[type="date"] {
+	width: 80%;
+}
+.mealList input[type="number"] {
+	width: 100%;
+}
+.mealList input[type="checkbox"] {
+	margin: 2px -20px 0 -27px;
+	height: 20px;
+}
+.mealList input[type="submit"] {
+	padding: 5px;
+}
+.sub-btn:hover {
+	border: 1px solid #005390;
+	background: #377EBB;
+}
+.sub-btn {
+	background: #105794;
+	border: 1px solid #478ECB;
+	padding: 5px 10px;
+	margin: 20px 62px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	width: 30%;
+	float: left;
+}
+.meal-Chart {
+	margin-right: 25px;
+}
+.meal-Chart h2 {
+	text-align: center;
+	margin: 0;
+	background: #337AB7;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'monotype corsiva';
+}
+
+.meal-Chart-Content {
+	margin: 10px 0;
+	width: 100%;
+	border-radius: 9px;
+	font-family: 'Times New Roman','Sans-serif';
+}
+
+.meal-Chart-Content tbody {
+	background: #3A81BE;
+	color: #032562;
+}
+.meal-Chart-Content tr:first-child {
+	background: #3980BD;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+.meal-Chart-Content tr:nth-child(2n) {
+	background: #589FDC;
+}
+.meal-Chart-Content tr td {
+	padding: 10px;
+	border: 3px solid #1E65A2;
+	text-align: center;
+}
+.meal-times {
+	width: 71%;
+	float: left;
+	margin-left: 25px;
+}
+.meal-times p {
+	float: left;
+	padding: 0 10px;
+	margin: -6px 0 -10px 0;
+}
+.meal-account {
+	background: #2A71AE;
+	width: 40%;
+	margin: 15px auto;
+	padding: 15px 20px;
+	box-shadow: 0 0px 4px 0px;
+	overflow: hidden;
+}
+.meal-account p {
+	margin: 0;
+	float: left;
+	color: #FFF;
+	font-size: 16px;
+	text-align: right;
+}
+.meal-account hr {
+	width: 88%;
+	display: table;
+	border: 1px solid #fff;
+	height: 0px;
+}
+.ledgerform {
+	text-align: center;
+}
+.ledgerform form {}
+.ledgerform form select {
+	margin: 10px;
+	width: 150px;
+	padding: 5px 35px 5px 10px;
+	font-size: 16px;
+	border: 1px solid #bebebe;
+	height: 34px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../img/drop.png) 96% / 15% no-repeat #cccccc;
+	border-radius: 10px;
+}
+/* CAUTION: IE hackery ahead */
+
+
+.ledgerform form select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    .ledgerform form select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+.ledgerform input[type="submit"] {
+	margin: 10px;
+	padding: 5px 20px;
+	font-size: 16px;
+	border: 1px solid #bebebe;
+	height: 34px;
+	text-align: center;
+	border-radius: 10px;
+	background:  url(../img/go.png) 100% /30% no-repeat #cccccc;
+	width: 80px;
+}
+
+.ledger {
+	width: 99%;
+	margin: 10px auto;
+	box-shadow: 0px 1px 8px -5px;
+	padding: 0 20px 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #337AB7;
+	overflow-x: scroll;
+}
+.ledger h2 {
+	text-align: center;
+	margin: 0;
+	font-size: 25px;
+	font-family: "Times New Roman";
+	color: #fff;
+	border-bottom: 1px dashed #1E65A2;
+	padding: 9px;
+}
+
+.myledger-user-name{
+	text-align: center;
+}
+
+.mealrate{
+	text-align: center;
+}
+
+.mealrate h2 {
+	font-size: 18px;
+	margin: 0 25px 10px 0;
+	border-bottom: 1px solid aliceblue;
+	padding-bottom: 5px;
+	color: #FF6213;
+}
+.mealcredit{
+	
+}
+.mealcost, .mealcredit {
+	background: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	text-align: right;
+	font-family: 'Jester';
+	color: #B3CCFF;
+}
+.mealcost tr td, .mealcredit tr td{
+	padding: 5px 10px 5px 20px;
+}
+.mealcost tr:nth-child(3),.mealcost tr:nth-child(9),.mealcredit tr:nth-child(3), .mealcredit tr:nth-child(5){
+	padding: 5px;
+	border-bottom: 1px solid;
+	width: 95%;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #808080;
+	background-color: transparent;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+	color: #CD8E00;
+	background-color: transparent;
+}
+
+/* ==========================================================================
+   Responsive
+   ==========================================================================
+*/
+    /* Style adjustments for viewports that meet the condition */
+
+
+@media only screen and (max-width:1316px) {
+    #message {
+	top: 78px;
+	right: 38%;
+}
+.usersinfo p, .membersinfo p {
+	font-size: 12px;
+}
+
+.userslistimage img {
+	width: 100px;
+	height: 100px;
+}
+.login-form {
+	width: 70%;
+	left: 12%;
+	position: absolute;
+	top: 25px;
+}
+	.signup-form {
+	width: 50%;
+}
+}
+
+@media only screen and (max-width: 992px) {
+	#message {
+	right: 32%;
+}
+	.profilecontent {
+	min-height: auto;
+}
+	.headsection {
+	min-height: 30px;
+	}
+	.navbar-collapse {
+	padding-right: 0;
+	padding-left: 0;
+	}
+
+	.sidebar {
+	margin: 60px 0 -40px 0;
+	min-height: initial;
+}
+.dropdown-menu{
+	margin: -28px 28% 10px;
+}
+.userslistimage {
+	width: 14%;
+}
+.sidebar {
+	display: none;
+}
+.togglediv {
+	width: 90%;
+	overflow-x: auto;
+}
+.mealoptions {
+	width: 28%;
+	margin: 10px;
+	padding: 0px;
+	text-align: center;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.mealList input[type="checkbox"] {
+	margin: 2px -7px 0 -27px;
+	height: 20px;
+}
+.meal-times p {
+	float: unset;
+	margin: 0 0 0 -25px;
+}
+.signup-form {
+	width: 60%;
+}
+}
+@media only screen and (min-width: 594px) and (max-width: 768px) {
+	.usersinfo {
+	width: 48%;
+	margin: 5px 5px;
+}
+}
+@media only screen and (max-width: 768px) {
+	
+	.meal-Chart-Content tr td {
+	padding: 5px;
+	font-size: 12px;
+}
+	.meal-date {
+	width: 80%;
+	margin: 0 auto;
+}
+.togglediv {
+	width: 98%;
+	margin: 50px auto;
+	padding: 8px 0 0 5px;
+}
+.signup-form {
+	width: 80%;
+}
+.signup-form select {
+	padding: 2px 2px;
+	margin-right: 12px;
+	font-size: 12px;
+}
+.login-form {
+	width: 80%;
+	left: 12%;
+	position: absolute;
+	top: 25px;
+}
+
+.signup-form button {
+	width: 55%;
+	margin: 25px 25% 15px;
+}
+.content {
+    margin: 60px 0px 10px 0px;
+}
+.createmess {
+	width: 70%;
+}
+.userslistimage {
+	width: 37%;
+}
+
+.navbar-collapse {
+	background-color: #363636;
+	border-radius: 3px;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	border-radius: 0px;
+	margin: -8px 0 -5px 0px;
+	padding: 20px 15px 12px;
+}
+.navbar-form {
+	padding: 0 0 0 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: -15px;
+	border-top: 0px solid transparent;
+	border-bottom: 0px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+.form-group input {
+	width: 90%;
+	float: left;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+.navbar-nav {
+	margin: 0;
+}
+.navbar-nav > li > a {
+	margin: 0 -14px;
+}
+
+.profileimage img {
+	margin: 20px 30% 10px;
+}
+	.dropdown-menu{
+	margin: -28px 0 10px;
+	width: 100%;
+}
+.meal-account {
+	width: 98%;	
+}
+}
+@media only screen and (max-width: 634px) {
+.sub-btn {
+	margin: 20px 15%;
+	margin-bottom: 20px;
+	width: 20%;
+}
+.meal-account p {
+	font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 594px) {
+	.profileimage img {
+	margin: 20px 28% 10px;
+	}
+	.mess-profile h2{
+		font-size: 20px;
+	}
+	.userslistimage {
+	width: 35%;
+	}
+	.sub-btn {
+	padding: 7px 0px;
+	margin: 0px 15%;
+	margin-bottom: 15px;
+}
+	.mealoptions {
+		font-size: 85px;
+	}
+	.profilecontent {
+	padding: 15px 20px;
+}
+.signup-form {
+	width: 95%;
+}
+.signup-form input{
+	width: 88%;
+}
+}
+
+@media only screen and (max-width: 468px) {
+#message {
+	top: 120px;
+	right: 15%;
+}
+	.mealcost, .mealcredit {
+	margin: 5px 33px;
+	}
+	.createmess {
+	width: 95%;
+	}
+	.login-form {
+	width: 88%;
+	left: 5%;
+	position: absolute;
+	top: 25px;
+	}
+
+	.navbar-brand {
+	font-size: 12px;
+	line-height: 10px;
+	}
+	.user-name h4 {
+	font-size: 12px;
+	}
+
+	.userslistimage {
+	width: 40%;
+	}
+	.mealoptions {
+	font-size: 38px;
+	width: 38%;
+}
+.profilecontent table{
+	font-size: 13px;
+}
+.footsection p {
+	line-height: 16px;
+}
+.signup-form input{
+	width: 78%;
+}
+}
+
+
+@media only screen and (max-width: 380px) {
+	#message {
+	right: 1%;
+}
+#message p {
+	padding: 0 36px;
+	font-size: 14px;
+}
+	.profileimage input[type="text"],.profileimage input[type="email"] {
+	margin-top: 0;
+	font-size: 13px;
+	width: 222px;
+}
+	.butn {
+	font-size: 12px;
+	}
+	.profileimage img {
+	margin: 20px 5% 10px;
+	}
+	.user-name h4 {
+	display: none;
+	}
+
+	.userslistimage {
+	width: 70%;
+	}
+
+	.signup-form {
+	width: 88%;
+	}
+	.signup-form h2 {
+	text-align: center;
+	font-size: 18px;
+	color: #FFFF9C;
+	}
+
+	.login-form {
+		left: 3%;
+		position: absolute;
+		top: 13px;
+		width: 94%;
+	}
+	.togglediv {
+		padding: 8px 0 0 20px;
+	}
+	.dropdown-menu > li > a {
+		font-size: 14px;
+	}
+	.dropdown-menu {
+	margin: -30px 0 0 -9px;
+}
+	.meal-account {
+	width: 100%;
+	padding: 4px 1px;
+}
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
